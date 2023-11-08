@@ -5,3 +5,4 @@ Technologies Used:
 - Amazon Route 53
 - HTML
 - CSS
+- S3
