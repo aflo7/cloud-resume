@@ -1,0 +1,43 @@
+hr {
+  padding: 0;
+  margin: 0;
+  /* border: 5px solid red; */
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+}
+
+.resume {
+  background-color: #3A506B;
+  max-width: 650px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  /* border: 1px solid black; */
+  padding: 30px;
+  color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+}
+
+.b {
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #5BC0BE;
+}
+
+.last {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #5BC0BE;
+}
