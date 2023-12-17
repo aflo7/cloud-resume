@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cloud Resume</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
           </div>
           <ul>
             <li>I helped customers with questions and worked the front desk.</li>
-            
+
           </ul>
         </div>
       </div>
@@ -63,7 +64,8 @@
           <div class="b">Bowling Green State University</div>
           <ul>
             <li>Bachelor of Science in Computer Science with a 3.6 GPA</li>
-            <li><strong>Notable Coursework:</strong> Web Application Development, Programming, Software Testing and Quality Assurance,
+            <li><strong>Notable Coursework:</strong> Web Application Development, Programming, Software Testing and
+              Quality Assurance,
               Database
               Management Systems, Operating Systems, Data Structures, Python for Computational Data Science</li>
 
@@ -183,6 +185,16 @@
 
 <script>
   console.log('hello world')
+  // https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/default/readCount
+  axios.get('https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/default/readCount', {
+    TableName: 'test'
+  })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 
 </script>
 
