@@ -184,15 +184,12 @@
 </body>
 
 <script>
-  // console.log('hello world')
   //https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/stage001
   fetch('https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/stage001', {
+    method: 'put',
     headers: {
-      'Content-Type': 'application/json',
       'Accept': 'application/json'
     }
-  }, {
-    method: 'PUT',
   })
     .then(res => res.json()) // or res.json()
     .then(res => console.log(res))
