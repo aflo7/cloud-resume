@@ -48,3 +48,11 @@ a {
 .count-span {
   font-weight: bold;
 }
+
+#visitor-count {
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+
+}

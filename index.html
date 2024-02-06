@@ -179,20 +179,23 @@
 
     </div>
 
-    <div id="visitorCount">Visitor count: <span id="count" class="count-span"></span></div>
+    <div id="visitor-count">Visitor count: <span id="count" class="count-span"></span></div>
   </div>
 </body>
 
 <script>
   //https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/stage001
-  fetch('https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/stage001', {
+  fetch('https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/stage001/', {
     method: 'put',
     headers: {
       'Accept': 'application/json'
     }
   })
     .then(res => res.json()) // or res.json()
-    .then(res => console.log(res))
+    .then(res => {
+      const countSpan = document.getElementById('count')
+      countSpan.textContent = res.Item.theCount
+    })
 
 </script>
 
