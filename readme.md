@@ -1,6 +1,6 @@
 Link: https://01.andres-flores-cloud-resume.com/
 
-![Architecture](./img.png)
+![Architecture](./img2.png)
 
 Technologies Used:
 - Amazon Cloudfront
