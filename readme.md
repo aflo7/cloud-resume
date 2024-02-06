@@ -8,3 +8,4 @@ Technologies Used:
 - HTML
 - CSS
 - S3
+- API Gateway
