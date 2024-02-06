@@ -179,22 +179,23 @@
 
     </div>
 
-    <div id="visitorCount">Visitor count:</div>
+    <div id="visitorCount">Visitor count: <span id="count" class="count-span"></span></div>
   </div>
 </body>
 
 <script>
   // console.log('hello world')
-  // https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/default/readCount
-  axios.get('https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/default/readCount', {
-    TableName: 'test'
+  //https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/stage001
+  fetch('https://xv753qwhrk.execute-api.us-east-2.amazonaws.com/stage001', {
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    }
+  }, {
+    method: 'PUT',
   })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    .then(res => res.json()) // or res.json()
+    .then(res => console.log(res))
 
 </script>
 
