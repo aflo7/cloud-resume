@@ -179,7 +179,7 @@
 
     </div>
 
-    <div id="visitor-count">Visitor count: <span id="count" class="count-span"></span></div>
+    <div id="visitor-count"></div>
   </div>
 </body>
 
@@ -193,8 +193,8 @@
   })
     .then(res => res.json()) // or res.json()
     .then(res => {
-      const countSpan = document.getElementById('count')
-      countSpan.textContent = res.Item.theCount
+      const countDiv = document.getElementById('visitor-count')
+      countDiv.textContent = `Visitor Count: ${res.Item.theCount}`
     })
 
 </script>
