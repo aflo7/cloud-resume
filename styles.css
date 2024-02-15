@@ -1,5 +1,6 @@
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, sans-serif;
+  /* font-family: 'Garamond', serif; */
   box-sizing: border-box;
 }
 
@@ -18,7 +19,7 @@ ul{
 
 .resume {
   background-color: #3A506B;
-  max-width: 800px;
+  max-width: 900px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 30px;
