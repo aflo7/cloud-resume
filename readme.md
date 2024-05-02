@@ -1,4 +1,4 @@
-Link: https://01.andres-flores-cloud-resume.com/
+Link: https://andres-flores-cloud-resume.com
 
 ![Architecture](./img2.png)
 
