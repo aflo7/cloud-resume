@@ -5,6 +5,7 @@ Link: https://andres-flores-cloud-resume.com
 Technologies Used:
 - Amazon Cloudfront
 - Amazon Route 53
+- JavaScript
 - HTML
 - CSS
 - S3
